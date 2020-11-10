@@ -1,0 +1,120 @@
+% Author: Adolfo Centeno 
+% Waves Lab
+
+ 
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+\usepackage[utf8]{inputenc}
+\usepackage{beamerthemeshadow}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!red,
+  urlcolor=green!70!black
+}
+
+\begin{document}
+\title{ITESM}  
+\subtitle{Campus Puebla\\ADMINISTRACION DE PROYECTOS DE INGENIERIA DE SOFTWARE
+}
+\author{Adolfo Centeno}
+\date{\today} 
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Java SpringBoot - FrontEnd integration}
+\tableofcontents
+\end{frame} 
+
+
+\section{W10 - Sesion }
+
+\begin{frame}
+
+    
+\textbf{W10 - Actividades:}
+
+
+\begin{block}{clone spring template with Security dependency}
+
+
+ 
+    \emph{git clone https://github.com/adsoftsito/springboot-jwt.git}
+\end{block}
+
+\begin{enumerate}
+
+\item
+    Add  
+    \href{https://github.com/adsoftsito/maps-api-jwt/blob/master/src/main/java/com/grokonez/jwtauthentication/model/Estado.java}{model}, 
+    \href{https://github.com/adsoftsito/maps-api-jwt/blob/master/src/main/java/com/grokonez/jwtauthentication/controller/EstadoController.java}{controller}, 
+    \href{https://github.com/adsoftsito/maps-api-jwt/blob/master/src/main/java/com/grokonez/jwtauthentication/repository/EstadoRepository.java}{repository} for estados
+    
+\item
+ Add  
+    \href{https://github.com/adsoftsito/maps-api-jwt/blob/master/src/main/java/com/grokonez/jwtauthentication/model/Municipio.java}{model}, 
+    \href{https://github.com/adsoftsito/maps-api-jwt/blob/master/src/main/java/com/grokonez/jwtauthentication/controller/MunicipioController.java}{controller}, 
+    \href{https://github.com/adsoftsito/maps-api-jwt/blob/master/src/main/java/com/grokonez/jwtauthentication/repository/MunicipioRepository.java}{repository} for municipios
+   
+
+\item
+ Add  
+    \href{https://github.com/adsoftsito/maps-api-jwt/blob/master/src/main/java/com/grokonez/jwtauthentication/model/Categoria.java}{model}, 
+    \href{https://github.com/adsoftsito/maps-api-jwt/blob/master/src/main/java/com/grokonez/jwtauthentication/controller/CategoriaController.java}{controller}, 
+    \href{https://github.com/adsoftsito/maps-api-jwt/blob/master/src/main/java/com/grokonez/jwtauthentication/repository/CategoriaRepository.java}{repository} for categorias
+
+\item
+
+ Add  
+    \href{https://github.com/adsoftsito/maps-api-jwt/blob/master/src/main/java/com/grokonez/jwtauthentication/model/Empresa.java}{model}, 
+    \href{https://github.com/adsoftsito/maps-api-jwt/blob/master/src/main/java/com/grokonez/jwtauthentication/controller/EmpresaController.java}{controller}, 
+    \href{https://github.com/adsoftsito/maps-api-jwt/blob/master/src/main/java/com/grokonez/jwtauthentication/repository/EmpresaRepository.java}{repository} for empresas
+
+\item
+    Populate database from csv
+\item
+    Test api with \href{https://www.postman.com/downloads/}{Postman}.	
+\item
+	Run as Docker \href{https://github.com/adsoftsito/ng5-api/blob/master/Dockerfile}{Dockerfile}
+	 
+\end{enumerate}
+
+	
+
+
+\end{frame}
+
+
+\section{W10  - Tareas }
+
+\begin{frame}
+
+
+\textbf{W10  - Tareas}
+
+
+\begin{enumerate}
+\item
+	Publicar como Docker en servidor de pruebas con el puerto asignado, conectar \href{https://github.com/adsoftsito/bigdata-maps}{frontend de mapas} con rest-api (Nota: por el momento correr frontend en localhost)
+
+\item
+	Agregar al menos 3 capas inegi (Ejemplo: Universidades, Hospitales, Comercios.)
+\item
+	Publicar el FronEnd como Docker
+\item
+	Publicar el API como Docker
+
+\end{enumerate} 
+
+
+\end{frame}
+
+
+
+
+\end{document}

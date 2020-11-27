@@ -11,6 +11,8 @@ Tareas 20 %
 
 Avance del Proyecto 80%
 
+Fecha Entrega: 11/dic/2020
+
 1.- Avance de la administracion del proyecto en proyectos de github con Kanban Automatizados, mostrar columnas con Reviews, Tareas cerradas, pendientes.
        
         Valor: 1-10 pts   

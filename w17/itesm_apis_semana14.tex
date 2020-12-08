@@ -1,0 +1,134 @@
+% Author: Adolfo Centeno 
+% Waves Lab
+
+ 
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+\usepackage[utf8]{inputenc}
+\usepackage{beamerthemeshadow}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!red,
+  urlcolor=green!70!black
+}
+
+\begin{document}
+\title{ITESM}  
+\subtitle{Campus Puebla\\ADMINISTRACION DE PROYECTOS DE INGENIERIA DE SOFTWARE
+}
+\author{Adolfo Centeno}
+\date{\today} 
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Graphql -  Censos Example}
+\tableofcontents
+\end{frame} 
+
+
+\section{W14 - Sesion }
+
+\begin{frame}
+
+    
+\textbf{W14 - Censos Example}
+
+
+\begin{enumerate}
+
+\item
+  ssh -i user user@104.198.244.0
+
+\item
+  python3 -m venv maps-api-graphql
+  
+\item
+  source maps-api-graphql/bin/activate
+  
+\item
+  git clone https://github.com/adsoftsito/maps-inegi-graphql  
+  
+\item
+ pip install -r requeriments.txt
+ 
+\item
+  Update database settings       
+    \href{https://github.com/adsoftsito/maps-inegi-graphql/blob/master/maps-inegi-graphql/settings.py}{settings}
+
+\item
+  pyhton manage.py makemigrations
+  
+\item
+  pyhton manage.py migrate
+  
+\item
+ Populate database from  \href{https://github.com/adsoftsito/maps-inegi-graphql/blob/master/dataset/censos.csv}{censos.csv}
+
+\item
+  python manage.py runserver 0.0.0.0:xxxx  
+  
+  
+ 
+\end{enumerate}
+
+	
+
+
+\end{frame}
+
+
+
+\begin{frame}
+
+    
+\textbf{W14 - Frontend Integration (Angular 10.x)}
+
+
+\begin{enumerate}
+
+\item
+  ng new maps-graphql-fronted
+
+\item
+   
+ Lab \href{https://www.apollographql.com/docs/angular/basics/setup/}{angular-apollo}
+
+ 
+\end{enumerate}
+
+	
+
+
+\end{frame}
+
+\section{W13  - Tareas }
+
+\begin{frame}
+
+
+\textbf{W14  - Tareas}
+
+
+\begin{enumerate}
+
+\item
+  Upload SS maps-api-grahpql 
+
+\item
+  Upload SS of angular project connected to maps-api-grahpql 
+ 	
+\end{enumerate} 
+
+
+\end{frame}
+
+
+
+
+\end{document}

@@ -1,0 +1,64 @@
+Rubrica proyecto final
+
+Tareas 20 %
+
+- lab graphql 1
+- lab graphql api (censos)
+- lab graphql front (angular 10.x)
+- tensor flow programs ( hello_world, basic operations, tensorboard)
+- docker tensor flow serving ( linear regression)
+
+
+Avance del Proyecto 80%
+
+Fecha: enero 2021 (Día del ordinario)
+
+
+1.- Avance de la administracion del proyecto en proyectos de github con Kanban Automatizados, mostrar columnas con Reviews, Tareas cerradas, pendientes.
+       
+        Valor: 1-10 pts   
+
+2.- Docker graphql, implementado alguna funcionalidad, consumo desde front
+
+	Valor: 1-10 pts
+
+3.- Docker tensor flow, implementado alguna funcionalidad, consumo desde front
+       Valor: 1-10 pts
+
+
+4.- Avance del front debera ser publicado en 2 ambientes:
+       - Testing:    (branch release) en servidor de la clase (en usuario del lider del equipo)
+       - Produccion: (branch master) en servidor Linux CENTOS 7 propio del equipo ( debera ser instalado y configurado por el mismo equipo)
+
+        Valor: 1-10 pts
+
+
+5.- REST-API debera ser publicado en 2 ambientes:
+       - Testing:    (branch release) en servidor de la clase (en usuario del lider del equipo)
+       - Produccion: (branch master) en servidor propio del equipo ( debera ser instalado y configurado por el mismo equipo)
+
+        Valor: 1-10 pts
+
+
+6.- REST-API publicada en los 2 ambientes (Testing y producción) deberá tener:
+       - Controller protegidos por tokens
+       - Controller de libre acceso sin tokens
+
+        Valor: 1-10 pts
+
+
+7.- Avances de prototipo basico de front con landing page, login, template del proyecto y alguna funcionalidad minima, con conectividad a la REST-API (controllers libres y protegidos por tokens) 
+
+       Valor: 1-10 pts.
+
+8.- REDIS instalado en servidor de producción (por parte del equipo)
+       Valor: 1-10 pts.
+
+9.- Prototipo de REST-API implementado alguna funcionalidad minima de REDIS como cache de base de datos
+       Valor: 1-10 pts.
+
+
+10.- Alcanzar un code-coverage del prototipo en hard-code de 100% en cuanto a las pruebas unitarias codificadas
+
+       Valor: 1-10 pts.
+      

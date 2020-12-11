@@ -1,0 +1,95 @@
+% Author: Adolfo Centeno 
+% Waves Lab
+
+ 
+\documentclass{beamer}
+\setbeamertemplate{navigation symbols}{}
+\usepackage[utf8]{inputenc}
+\usepackage{beamerthemeshadow}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!red,
+  urlcolor=green!70!black
+}
+
+\begin{document}
+\title{ITESM}  
+\subtitle{Campus Puebla\\ADMINISTRACION DE PROYECTOS DE INGENIERIA DE SOFTWARE
+}
+\author{Adolfo Centeno}
+\date{\today} 
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}\frametitle{Tensorflow}
+\tableofcontents
+\end{frame} 
+
+
+\section{W15 - Sesion }
+
+\begin{frame}
+
+    
+\begin{enumerate}
+\item Que es un \href{https://empresas.blogthinkbig.com/deep-learning-para-todos-los-publicos/}{tensor}, Que es \href{https://www.youtube.com/watch?v=bPPLCrjQCBQ}{tensor-flow}, sitio \href{https://www.tensorflow.org/?hl=es-419}{oficial de tensorflow}
+\item
+  ssh -i user user@104.198.244.0
+
+\item
+  python3 -m venv tensor-2.0
+  
+\item
+  source tensor-2.0/bin/activate
+  
+\item mkdir tensorflow2 \& cd tensorflow2
+  
+\item vi \href{https://github.com/adsoftsito/tensorflow-2.0/blob/main/requeriments.txt}{requeriments.txt}
+
+\item pip install -r requeriments.txt
+   
+\item tensorflow \href{https://github.com/adsoftsito/tensorflow-2.0/blob/main/hello_world.py}{helloworld.py},  \href{https://github.com/adsoftsito/tensorflow-2.0/blob/main/tensor_operations.py}{basicoperations.py}
+
+\item tensorboard \href{https://github.com/adsoftsito/tensorflow-2.0/blob/main/tensorboard_example.py}{example1} \href{https://gist.github.com/EvolvedSquid/0b9e031af5b69d15f073e99bb9c69a4b}{example2}
+
+\item Visualize:  tensorboard --logdir='./graphs' --port 8xxx
+ 
+\item Introduccion a \href{https://www.adictosaltrabajo.com/2019/06/04/google-colab-python-y-machine-learning-en-la-nube/}{Google Colab}, Realizar tensorflow  \href{https://towardsdatascience.com/serving-keras-models-locally-using-tensorflow-serving-tf-2-x-8bb8474c304e}{deploy lab}
+\item sudo docker run --name userxxx-keras -t --rm -p 8xxx:8501 -v "/home/userxxx/tensorflow-2.0/linear\_model:/models/linear\_model" -e MODEL\_NAME=linear\_model tensorflow/serving \&
+
+\item curl -d '{"instances": [[0]]}' -X POST 104.198.244.0:8192/v1/models/linear\_model:predict 
+\end{enumerate}
+
+
+\end{frame}
+
+
+\section{W13  - Tareas }
+
+\begin{frame}
+
+
+\textbf{W15  - Tareas}
+
+
+\begin{enumerate}
+
+\item
+  Upload SS tensorflow serving in Docker
+
+ 	
+\end{enumerate} 
+
+
+\end{frame}
+
+
+
+
+\end{document}
